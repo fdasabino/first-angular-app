@@ -4,13 +4,14 @@
     <div class="flex justify-start items-center gap-4">
         <div class="hidden sm:block sm:shrink-0">
             <img
-                alt="{{ user.name }}"
-                src="{{ user.avatar }}"
+                alt="{{ selectedUser.name }}"
+                [src]="selectedUser.avatar"
                 class="size-16 rounded-full object-cover shadow-sm"
             />
         </div>
-        <span>{{ user.name }}</span>
+        <span>{{ selectedUser.name }}</span>
     </div>
+
     <span
         class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
     ></span>
