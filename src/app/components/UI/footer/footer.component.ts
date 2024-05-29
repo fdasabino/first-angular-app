@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
     selector: 'app-footer',
     templateUrl: './footer.component.html',
 })
-export class FooterComponent {}
+export class FooterComponent {
+    public currentYear: number = new Date().getFullYear();
+    public disclaimer: string =
+        'Created by Francisco Sabino, with Love and Coffee ☕️❤️';
+
+    public backToTop(): void {
+        window.scrollTo(0, 0);
+    }
+}
