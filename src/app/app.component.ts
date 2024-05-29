@@ -8,6 +8,4 @@ import { HeaderComponent } from './components/UI/header/header.component';
     imports: [RouterOutlet, HeaderComponent, FooterComponent],
     templateUrl: './app.component.html',
 })
-export class AppComponent {
-    title = 'first angular app!!!';
-}
+export class AppComponent {}
