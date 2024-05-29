@@ -22,45 +22,45 @@ $base-breakpoint-768px: 768px;
 $base-breakpoint-480px: 480px;
 
 .base_blurry_background {
-  background: rgba($color: $base-primary, $alpha: 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba($color: $base-border-color, $alpha: 0.2);
-  border-radius: 16px;
+    background: rgba($color: $base-primary, $alpha: 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba($color: $base-border-color, $alpha: 0.2);
+    border-radius: 16px;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  touch-action: manipulation; /* Ensure better touch responsiveness */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    touch-action: manipulation; /* Ensure better touch responsiveness */
 }
 
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 body {
-  font-family: "JetBrains Mono", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  user-select: none;
-  background: #000;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    background: #000;
 }
 
 main {
-  position: relative;
-  width: 100%; /* Ensure main takes full width */
-  min-height: fit-content;
-  padding: 1rem;
+    position: relative;
+    width: 100%; /* Ensure main takes full width */
+    min-height: fit-content;
+    padding: 1rem;
 }
 
 h1,
@@ -69,19 +69,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "JetBrains Mono", sans-serif;
-  font-weight: 500;
-  color: #fff; /* Use a fallback color */
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 500;
+    color: #fff; /* Use a fallback color */
 }
 
 p,
 a,
 small,
 span {
-  font-family: "JetBrains Mono", sans-serif;
-  font-weight: 400;
-  color: #fff; /* Use a fallback color */
-  letter-spacing: 0.025rem;
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 400;
+    color: #fff; /* Use a fallback color */
+    letter-spacing: 0.025rem;
 }
 
 button,
@@ -90,49 +90,49 @@ input,
 select,
 option,
 label {
-  transition: all 0.5s linear;
-  font-family: "JetBrains Mono", sans-serif !important;
-  line-height: 1.1rem !important;
+    transition: all 0.5s linear;
+    font-family: "JetBrains Mono", sans-serif !important;
+    line-height: 1.1rem !important;
 }
 
 img,
 video,
 canvas,
 svg {
-  max-width: 100%;
-  height: auto; /* Ensure images and media adjust proportionally */
+    max-width: 100%;
+    height: auto; /* Ensure images and media adjust proportionally */
 }
 
 a {
-  text-decoration: none;
-  color: #000; /* Use a fallback color */
+    text-decoration: none;
+    color: #000; /* Use a fallback color */
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: #fff; /* Use a fallback color */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Use a fallback color */
 }
 
 li {
-  color: #fff; /* Use a fallback color */
+    color: #fff; /* Use a fallback color */
 }
 
 button {
-  border: none;
-  outline: none;
-  cursor: pointer;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 input {
-  font-family: "Manrope", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 hr {
-  padding: 0 1rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  border: none;
-  border-top: 2px dotted $base-primary; /* Use a fallback color */
+    padding: 0 1rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border: none;
+    border-top: 2px dotted $base-primary; /* Use a fallback color */
 }
