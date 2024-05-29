@@ -1,6 +1,14 @@
-<app-header></app-header>
+<app-header />
 <main>
-    <app-user></app-user>
-    <router-outlet></router-outlet>
+    <div class="grid grid-cols-2 grid-rows-5 gap-4">
+        <div class="row-span-full grid grid-cols-1 gap-4">
+            <ul id="users">
+                <li>
+                    <app-user />
+                </li>
+            </ul>
+        </div>
+        <div class="row-span-5">12</div>
+    </div>
 </main>
-<app-footer></app-footer>
+<app-footer />
