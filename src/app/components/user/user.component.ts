@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { DUMMY_USERS } from '../../../../data/dummy-users';
 
 @Component({
@@ -8,6 +8,12 @@ import { DUMMY_USERS } from '../../../../data/dummy-users';
     templateUrl: './user.component.html',
 })
 export class UserComponent {
-    public randomUser = Math.floor(Math.random() * DUMMY_USERS.length);
-    public selectedUser = DUMMY_USERS[this.randomUser];
+    public randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+    public selectedUser = DUMMY_USERS[this.randomIndex];
+
+    public onSelectUser(): void {
+        console.log('User selected:', this.selectedUser);
+        const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+        this.selectedUser = DUMMY_USERS[randomIndex];
+    }
 }
