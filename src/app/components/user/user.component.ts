@@ -1,9 +1,5 @@
-import { Component, Input, input } from '@angular/core';
-
-type User = {
-    name: string;
-    avatar: string;
-};
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from '../../../types';
 
 @Component({
     selector: 'app-user',
@@ -13,5 +9,9 @@ type User = {
 })
 export class UserComponent {
     @Input({ required: true }) user!: User;
-    onSelectUser(): void {}
+    @Output() selectUser = new EventEmitter<User>();
+
+    onSelectUser(): void {
+        this.selectUser.emit(this.user);
+    }
 }

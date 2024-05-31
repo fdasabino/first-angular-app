@@ -4,7 +4,10 @@
         <div class="row-span-full p-4 rounded-lg shadow-md">
             <ul id="users" class="space-y-4">
                 <li *ngFor="let user of users">
-                    <app-user [user]="user"></app-user>
+                    <app-user
+                        [user]="user"
+                        (selectUser)="onSelectUser(user)"
+                    ></app-user>
                 </li>
             </ul>
         </div>
