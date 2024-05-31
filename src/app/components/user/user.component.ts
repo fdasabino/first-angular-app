@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
-import { DUMMY_USERS } from '../../../../data/dummy-users';
+import { Component, Input } from '@angular/core';
+
+type User = {
+    name: string;
+    avatar: string;
+};
 
 @Component({
     selector: 'app-user',
@@ -8,12 +12,6 @@ import { DUMMY_USERS } from '../../../../data/dummy-users';
     templateUrl: './user.component.html',
 })
 export class UserComponent {
-    public randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-    public selectedUser = DUMMY_USERS[this.randomIndex];
-
-    public onSelectUser(): void {
-        console.log('User selected:', this.selectedUser);
-        const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-        this.selectedUser = DUMMY_USERS[randomIndex];
-    }
+    @Input({ required: true }) user!: User;
+    onSelectUser(): void {}
 }

@@ -3,8 +3,8 @@
     <div class="grid lg:grid-cols-2 gap-4">
         <div class="row-span-full p-4 rounded-lg shadow-md">
             <ul id="users" class="space-y-4">
-                <li>
-                    <app-user></app-user>
+                <li *ngFor="let user of users">
+                    <app-user [user]="user"></app-user>
                 </li>
             </ul>
         </div>

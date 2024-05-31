@@ -5,12 +5,12 @@
     <div class="flex justify-start items-center gap-4">
         <div class="hidden sm:block sm:shrink-0">
             <img
-                alt="{{ selectedUser.name }}"
-                [src]="selectedUser.avatar"
+                alt="{{ user.name }}"
+                src="{{ user.avatar }}"
                 class="size-16 rounded-full object-cover shadow-sm"
             />
         </div>
-        <span>{{ selectedUser.name }}</span>
+        <span>{{ user.name }}</span>
     </div>
 
     <span
