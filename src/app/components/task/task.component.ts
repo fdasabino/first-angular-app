@@ -6,9 +6,7 @@ import { User } from '../../../types';
     standalone: true,
     imports: [],
     templateUrl: './task.component.html',
-    styleUrl: './task.component.scss',
 })
 export class TaskComponent {
-    // get the user from the parent component event
     @Input({ required: true }) user!: User;
 }
