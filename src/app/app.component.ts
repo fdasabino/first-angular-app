@@ -5,6 +5,7 @@ import { DUMMY_USERS } from '../../data/dummy-users';
 import { User } from '../types';
 import { FooterComponent } from './components/UI/footer/footer.component';
 import { HeaderComponent } from './components/UI/header/header.component';
+import { TaskComponent } from './components/task/task.component';
 import { UserComponent } from './components/user/user.component';
 
 @Component({
@@ -16,13 +17,15 @@ import { UserComponent } from './components/user/user.component';
         FooterComponent,
         UserComponent,
         CommonModule,
+        TaskComponent,
     ],
     templateUrl: './app.component.html',
 })
 export class AppComponent {
     users = DUMMY_USERS;
+    selectedUser!: User;
 
     onSelectUser(user: User): void {
-        console.log('User selected:', user.id);
+        this.selectedUser = user;
     }
 }

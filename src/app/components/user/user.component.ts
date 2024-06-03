@@ -12,6 +12,7 @@ export class UserComponent {
     @Output() selectUser = new EventEmitter<User>();
 
     onSelectUser(): void {
+        console.log('User selected:', this.user.id);
         this.selectUser.emit(this.user);
     }
 }
