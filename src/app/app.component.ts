@@ -23,7 +23,7 @@ import { UserComponent } from './components/user/user.component';
 })
 export class AppComponent {
     users = DUMMY_USERS;
-    selectedUser!: User;
+    selectedUser: User | null = null;
 
     onSelectUser(user: User): void {
         this.selectedUser = user;
