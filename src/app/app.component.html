@@ -3,12 +3,14 @@
     <div class="grid lg:grid-cols-2 gap-4">
         <div class="row-span-full rounded-lg shadow-md">
             <ul id="users" class="space-y-4">
-                <li *ngFor="let user of users">
+                @for(user of users; track user.id){
+                <li>
                     <app-user
                         [user]="user"
                         (selectUser)="onSelectUser($event)"
                     ></app-user>
                 </li>
+                }
             </ul>
         </div>
         <div

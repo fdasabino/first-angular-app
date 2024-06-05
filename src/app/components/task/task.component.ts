@@ -8,5 +8,5 @@ import { User } from '../../../types';
     templateUrl: './task.component.html',
 })
 export class TaskComponent {
-    @Input({ required: true }) user!: User;
+    @Input({ required: true }) user: User | null = null;
 }
