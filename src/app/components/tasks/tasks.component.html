@@ -1,5 +1,7 @@
-<section class="bg-white w-full h-fit flex flex-col gap-6 p-4 rounded-md">
-    <header class="flex gap-4 items-center justify-between">
+<section class="w-full h-fit flex flex-col p-4 rounded-md">
+    <header
+        class="bg-white flex gap-4 items-center justify-between p-2 rounded-t-md"
+    >
         @if(user){
         <p class="text-violet-900">{{ user.name }}</p>
         }
@@ -13,7 +15,8 @@
         >
     </header>
 
-    <ul class="flex flex-col gap-4">
+    <ul class="flex flex-col">
+        <li><app-task /></li>
         <li><app-task /></li>
     </ul>
 </section>
