@@ -1,0 +1,19 @@
+<section class="bg-white w-full h-fit flex flex-col gap-6 p-4 rounded-md">
+    <header class="flex gap-4 items-center justify-between">
+        @if(user){
+        <p class="text-violet-900">{{ user.name }}</p>
+        }
+        <menu
+            ><button
+                class="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
+                type="button"
+            >
+                + Add task
+            </button></menu
+        >
+    </header>
+
+    <ul class="flex flex-col gap-4">
+        <li><app-task /></li>
+    </ul>
+</section>
